@@ -1,0 +1,10 @@
+p {
+  background-color: red;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 15px;
+  width: 250px;
+  -webkit-box-shadow: 15px 15px 44px 3px rgba(0,0,0,0.58);
+  -moz-box-shadow: 15px 15px 44px 3px rgba(0,0,0,0.58);
+  box-shadow: 15px 15px 44px 3px rgba(0,0,0,0.58);
+}
