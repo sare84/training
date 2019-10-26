@@ -10,6 +10,16 @@ services:
       - "8080:8080"
     links:
       - mongo
+  app:
+    container_name: app
+    restart: always
+    build: ./app
+    volumes: 
+      - ./app:/usr/src/app
+    ports:
+      - "4200:4200"
+    links:
+      - api
   mongo:
     container_name: mongo
     image: mongo
