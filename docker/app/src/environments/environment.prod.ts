@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  api: 'api',
+  apiPort: '8080'
 };
