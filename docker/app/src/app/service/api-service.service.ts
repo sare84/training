@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
   public http = `http://`;
-  public apiUrl = `${this.http}localhost:${environment.apiPort}`;
+  public apiUrl = `${this.http}${environment.api}:${environment.apiPort}`;
 
   getApiInfo() {
     console.log(this.apiUrl);
