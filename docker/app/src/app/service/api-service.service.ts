@@ -9,10 +9,10 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
   public http = `http://`;
   public apiUrl = `${this.http}${environment.api}:${environment.apiPort}`;
+  public infoRoute = '/info';
 
   getApiInfo() {
-    console.log(this.apiUrl);
-    return this.httpClient.get(`${this.apiUrl}/info`);
+    return this.httpClient.get(`${this.apiUrl}${this.infoRoute}`);
   }
 
   constructor(public httpClient: HttpClient) {
